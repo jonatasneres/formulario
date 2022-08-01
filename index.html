@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário Oficial KA</title>
+    </head>
+    <body>
+        <section style="border: 1px; border-style: solid;">
+            <h2 style="font-family: 'Courier New', Courier, monospace;"><b>Cadastro oficial Kenzie Academy</b></h2>
+            <form name="formularioKenzie">
+                <label>Nome</label>
+                <input type="text" name="nome" placeholder="Digite seu nome..." required />
+                <br>
+                <label>E-mail</label>
+                <input type="text" name="email" placeholder="Digite seu e-mail..." required />
+                <br>
+                <label for="descricao">O que te fez participar do evento?</label>
+                <!-- Coloquei o BR pra pular a linha -->
+                <br>
+                <textarea placeholder="Digite seu depoimento..." name="descricao" id="descricao" cols="30" rows="5"></textarea>
+                <br>
+                <label for="modulo">Módulo</label>
+                <select name="modulo" id="modulo">
+                    <option value="">Selecione seu módulo</option>
+                    <option value="m1">M1</option>
+                    <option value="m1">M2</option>
+                    <option value="m1">M3</option>
+                    <option value="m1">M4</option>
+                    <option value="m1">M5</option>
+                    <option value="m1">M6</option>
+                </select>
+                <br>            
+                <label>Senha</label>
+                <input type="password" placeholder="Digite sua senha..." name="formularioKenzie" id="senha" maxlength="15" />
+                <br>
+                <label>Confirmar senha</label>
+                <input type="password" placeholder="Confirmar senha..." name="formularioKenzie" id="confirmarSenha" maxlength="15" />
+                <p>Deseja receber novidades em seu email?</p>
+                <label for="sim">sim</label>
+                <input type="radio" name="formularioKenzie" id="sim" value="sim">
+                <label for="nao">não</label>
+                <input type="radio" name="formularioKenzie" id="nao" value="nao">
+                <br><br><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </body>
+</html>
